@@ -1,1 +1,17 @@
 # Class-variables
+# class variable
+class Movies:
+    
+    profit = 800  #class variable
+    def _init_(self, name, collection, producer, year):# instance variable
+        self.name=name
+        self.collection=collection
+        self.producer=producer
+        self.year=year
+
+m1=Movies('iron man', 500, 'kevin', 2008)        
+m2=Movies('iron man 2', 780, 'feige', 2010)
+# accessing class variable
+# accessing instance variable
+print(m1.profit)
+print(m2.name)
